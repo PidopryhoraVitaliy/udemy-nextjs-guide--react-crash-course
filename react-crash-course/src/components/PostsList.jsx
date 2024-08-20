@@ -17,7 +17,8 @@ function PostsList() {
         <ul className={classes.posts}>
           {posts.map((post) => (
             <Post
-              key={post.author + post.body}
+              key={post.id}
+              id={post.id}
               author={post.author}
               body={post.body}
             />
